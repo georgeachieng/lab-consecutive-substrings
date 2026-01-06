@@ -13,11 +13,11 @@ function consecutiveSubstrings(string) {
   const result = [];
   const n = string.length;
 
-  // Outer loop: choose starting index
+
   for (let i = 0; i < n; i++) {
-    // Inner loop: choose ending index
+    
     for (let j = i + 1; j <= n; j++) {
-      // substring(i, j) gives consecutive slice from i up to j-1
+      
       result.push(string.substring(i, j));
     }
   }
@@ -26,7 +26,7 @@ function consecutiveSubstrings(string) {
 }
 
 if (require.main === module) {
-  // ✅ Custom tests
+  
   console.log("Expecting: ['a', 'ab', 'abc', 'b', 'bc', 'c']");
   console.log("=>", consecutiveSubstrings('abc'));
 
